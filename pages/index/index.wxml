@@ -27,7 +27,7 @@
 </view>
 
 <view class="controls">
-  <button class="btn-start" hover-class="btn-start-hover" bindtap="handleStart">
+  <button class="btn-start" hover-class="btn-start-hover" bindtap="handleCamera" bindlongpress="handleChoose">
     <view class="icon"></view>
     <text class="text">拍拍看</text>
   </button>

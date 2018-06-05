@@ -32,24 +32,32 @@ Page({
     })
   },
 
-  handleStart () {
+  getImage (type = 'camera') {
     const that = this
     wx.chooseImage({
       sizeType: ['original'],
-      sourceType: ['camera'],
-      success (res) {
+      sourceType: [type],
+      success(res) {
         const image = res.tempFiles[0]
-        
+
         // 图片过大
         if (image.size > 1024 * 1000) {
           wx.showToast({ icon: 'none', title: '图片过大, 请重新拍张小的！' })
           return false
         }
-        
+
         that.setData({ image: image.path })
         that.detectImage(image.path)
       }
     })
+  },
+
+  handleCamera () {
+    this.getImage()
+  },
+
+  handleChoose () {
+    this.getImage('album')
   },
 
   /**
