@@ -3,12 +3,6 @@
     "pages/index/index"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "拍照测颜值",
-    "navigationStyle": "custom",
-    "backgroundColor": "#eeeeee",
-    "backgroundTextStyle": "light",
-    "enablePullDownRefresh": false
+    "navigationBarTitleText": "zceme"
   }
 }

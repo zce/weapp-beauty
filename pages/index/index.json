@@ -1,1 +1,6 @@
-{}
+{
+  "navigationBarBackgroundColor": "#050505",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "啪啪测颜值",
+  "navigationStyle": "custom"
+}
