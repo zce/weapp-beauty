@@ -6,7 +6,7 @@ Page({
    */
   data: {
     // https://images.unsplash.com/photo-1560042289-7951ad5bfcf5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=750&h=1334&fit=crop&ixid=eyJhcHBfaWQiOjF9
-    image: '/assets/placeholder.png',
+    image: '/assets/placeholder.jpg',
     showTips: false,
     result: null
   },
@@ -51,7 +51,7 @@ Page({
    */
   getImage (type = 'camera') {
     const that = this
-    
+
     // 调用系统 API 选择或拍摄照片
     wx.chooseImage({
       sourceType: [type], // camera | album
