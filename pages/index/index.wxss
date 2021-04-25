@@ -7,8 +7,11 @@
 }
 
 .result {
-  position: relative;
-  margin: 700rpx 40rpx 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 260rpx;
+  margin: 40rpx;
   padding: 50rpx;
   border-radius: 20rpx;
   background: rgba(255, 255, 255, 0.95);

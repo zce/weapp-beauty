@@ -5,25 +5,25 @@
     <text>性别：</text><text>{{ result.gender > 50 ? '♂' : '♀' }}</text>
   </view>
   <view class="item">
-    <text>年龄：</text><text>{{ result.age }}岁</text>
+    <text>年龄：</text><text>{{ result.FaceAttributesInfo.Age }}岁</text>
   </view>
   <view class="item">
     <text>表情：</text>
-    <text wx:if="{{ result.expression < 10 }}">黯然伤神</text>
-    <text wx:elif="{{ result.expression < 20 }}">半嗔半喜</text>
-    <text wx:elif="{{ result.expression < 30 }}">似笑非笑</text>
-    <text wx:elif="{{ result.expression < 40 }}">笑逐颜开</text>
-    <text wx:elif="{{ result.expression < 50 }}">莞尔一笑</text>
-    <text wx:elif="{{ result.expression < 60 }}">喜上眉梢</text>
-    <text wx:elif="{{ result.expression < 70 }}">眉开眼笑</text>
-    <text wx:elif="{{ result.expression < 80 }}">笑尽妖娆</text>
-    <text wx:elif="{{ result.expression < 90 }}">心花怒放</text>
+    <text wx:if="{{ result.FaceAttributesInfo.Expression < 10 }}">黯然伤神</text>
+    <text wx:elif="{{ result.FaceAttributesInfo.Expression < 20 }}">半嗔半喜</text>
+    <text wx:elif="{{ result.FaceAttributesInfo.Expression < 30 }}">似笑非笑</text>
+    <text wx:elif="{{ result.FaceAttributesInfo.Expression < 40 }}">笑逐颜开</text>
+    <text wx:elif="{{ result.FaceAttributesInfo.Expression < 50 }}">莞尔一笑</text>
+    <text wx:elif="{{ result.FaceAttributesInfo.Expression < 60 }}">喜上眉梢</text>
+    <text wx:elif="{{ result.FaceAttributesInfo.Expression < 70 }}">眉开眼笑</text>
+    <text wx:elif="{{ result.FaceAttributesInfo.Expression < 80 }}">笑尽妖娆</text>
+    <text wx:elif="{{ result.FaceAttributesInfo.Expression < 90 }}">心花怒放</text>
     <text wx:else>一笑倾城</text>
   </view>
   <view class="item">
-    <text>颜值：</text><text>{{ result.beauty }}（0 - 100）</text>
+    <text>颜值：</text><text>{{ result.FaceAttributesInfo.Beauty }}（0 - 100）</text>
   </view>
-  <view wx:if="{{ result.glass }}">你好丫四眼仔~</view>
+  <view wx:if="{{ result.FaceAttributesInfo.Glass }}">你好丫四眼仔~</view>
 </view>
 
 <view class="controls">

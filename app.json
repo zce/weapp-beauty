@@ -4,5 +4,6 @@
   ],
   "window": {
     "navigationBarTitleText": "zceme"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

@@ -25,16 +25,15 @@ Page({
 
     // 将图片上传至 AI 服务端点
     wx.uploadFile({
-      url: 'https://ai.qq.com/cgi-bin/appdemo_detectface',
-      name: 'image_file',
+      url: 'https://toas.cc/face_detect',
+      name: 'image',
       filePath: src,
       success (res) {
         // 解析 JSON
         const result = JSON.parse(res.data)
-
-        if (result.ret === 0) {
+        if (result.FaceInfos[0]) {
           // 成功获取分析结果
-          that.setData({ result: result.data.face[0] })
+          that.setData({ result: result.FaceInfos[0] })
         } else {
           // 检测失败
           wx.showToast({ icon: 'none', title: '找不到你的小脸蛋喽～' })
